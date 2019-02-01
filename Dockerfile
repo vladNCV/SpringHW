@@ -7,7 +7,7 @@ VOLUME /tmp
 # Make port 8080 available to the world outside this container
 EXPOSE 8080
 
-RUN mvn package
+RUN ./mvnw package
 
 # The application's jar file
 ARG JAR_FILE=target/demo-0.0.1-SNAPSHOT.jar
